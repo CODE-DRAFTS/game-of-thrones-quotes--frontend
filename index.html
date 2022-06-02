@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game of thrones api</title>
+</head>
+<body>
+    <div class="hero-section">
+        <div class="hero-container">
+            <img src="download.png" alt="" id="logo">
+            <span class="content" id="intro" > GAME OF THRONES</span>
+            <span class="content" id="intro-2"> qoutes api</span>
+            <a href="https://game-thrones.herokuapp.com/docs" class="content" > <button id="intro-3"> view documentation</button>  </a>
+            <span class="content" id="intro-4"> developed by Bernard Njeru</span>
+            <div class="contact-section">
+                <span class="hero-content" id="contact-info"> contact info</span>
+                <div class="contact-logos">
+                    <a href="https://github.com/CODE-DRAFTS"> <img src="icons8-github-48.png" alt=""> </a>
+                    <a href="https://m.facebook.com/benney.wailer.9"> <img src="icons8-facebook.svg" alt="">  </a>
+                    <a href="https://twitter.com/BernardNjeru18"> <img src="icons8-twitter.svg" alt=""> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        *{
+
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            box-sizing: border-box;
+            padding:0;
+            margin: 0;
+            background: black;
+            color: white;
+        }
+        a{
+            text-decoration: none;
+            font-size: 19px;
+            color:white;
+        }
+        span{
+            font-size: 17px;
+            color:white;
+        }
+        .hero-section{
+            margin: 30px auto;
+            width: 80%;
+            height: 80vh;
+            max-width: 600px;
+            border-radius: 10px
+        }
+        .hero-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 200px auto;
+            
+        }
+        .hero-container #logo{
+            border: 0px black;
+
+        }
+        .hero-container .content{
+            text-align: center;
+            width: 100%;
+        }
+        .hero-container #intro{
+            font-size: 50px;
+            font-weight: 1000;
+            font-style: bold;
+            margin: 0px auto;
+            margin-top: 20px;
+        }
+        .hero-container #intro-2{
+            font-size: 50px;
+            text-align: center;
+            font-style: italic;
+        }
+        .hero-container #intro-3{
+            width: 200px;
+            height: 40px;
+            background: green;
+            margin: 30px auto;
+            border-radius: 56px;
+            border: 0px;
+            cursor: pointer;
+            text-align: center;
+
+        }
+        .hero-container .content button{
+           font-size: 18px;
+           color: white;
+        }
+        
+        .contact-section{
+            width: 100%;
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .contact-section .hero-content #contact-info{
+            text-align: center;
+        }
+        .contact-logos{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .contact-logos img{
+            text-align: end;
+            margin: 10px 20px;
+        }
+        @media screen and (max-width: 960px){
+
+        }
+        @media screen and (max-width: 620px){
+             .contact-section{
+                 margin-top: 90px;
+             }
+            .hero-container #intro{
+                font-size: 30px;
+            }
+            .hero-container #intro-2{
+                font-size: 22px;
+            }
+            .hero-container #intro-3{
+                font-size: 17px;
+            }
+        }
+        
+    </style>
+</body>
+</html>
